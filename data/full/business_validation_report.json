@@ -1,0 +1,44 @@
+{
+  "dataset": "data\\full",
+  "row_counts": {
+    "channel": 8,
+    "audience": 5,
+    "creative": 10,
+    "contact": 50000,
+    "campaign": 500,
+    "campaign_audience": 751,
+    "campaign_creative": 991,
+    "touchpoint": 200000,
+    "web_session": 17500,
+    "lead": 11000,
+    "opportunity": 10000,
+    "orders": 4041,
+    "cost_record": 489,
+    "attribution_result": 8789,
+    "ground_truth": 5
+  },
+  "attribution_model_counts": {
+    "FIRST_TOUCH": 2469,
+    "LAST_TOUCH": 2469,
+    "LINEAR": 3851
+  },
+  "ground_truth_issue_counts": {
+    "DUPLICATE_REVENUE": 1,
+    "POST_CONVERSION_TOUCH": 1,
+    "CURRENCY_MISMATCH": 1,
+    "MISSING_CAMPAIGN_COST": 1,
+    "UNSUPPORTED_IDENTITY_LINK": 1
+  },
+  "error_count": 0,
+  "warning_count": 0,
+  "errors": [],
+  "warnings": [],
+  "findings": [
+    "All five required ground-truth anomaly types are present.",
+    "Duplicate revenue event REV-EVENT-000001: orders ['ORD-2026-000001', 'ORD-2026-004041']; count once.",
+    "Currency mismatch flagged for COST-2026-000489: USD vs campaign INR; quarantine/convert before ROI.",
+    "Campaign CMP-2026-000022 has no cost records; ROI should be unavailable, not zero.",
+    "Session SES-2026-000025 has a contact link without identity evidence; quarantine/reject the link."
+  ],
+  "status": "PASS"
+}

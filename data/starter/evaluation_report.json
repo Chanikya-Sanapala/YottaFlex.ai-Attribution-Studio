@@ -1,0 +1,113 @@
+{
+  "dataset": "yottaflex-attribution\\data\\starter",
+  "status": "PASS",
+  "scope": "Rule/integrity evaluation, not causal or statistical accuracy evaluation.",
+  "row_counts": {
+    "orders": 91,
+    "touchpoint": 4000,
+    "attribution_result": 182,
+    "ground_truth": 5,
+    "cost_record": 25,
+    "campaign": 25,
+    "web_session": 350
+  },
+  "models": {
+    "FIRST_TOUCH": {
+      "attribution_rows": 51,
+      "attributed_orders": 51,
+      "sum_attributed_revenue": 8112680.13,
+      "unreconciled_groups": 0
+    },
+    "LAST_TOUCH": {
+      "attribution_rows": 51,
+      "attributed_orders": 51,
+      "sum_attributed_revenue": 8112680.13,
+      "unreconciled_groups": 0
+    },
+    "LINEAR": {
+      "attribution_rows": 80,
+      "attributed_orders": 51,
+      "sum_attributed_revenue": 8112680.13,
+      "unreconciled_groups": 0
+    }
+  },
+  "integrity": {},
+  "unreconciled_groups": [],
+  "anomaly_checks": {
+    "required_ground_truth_types_present": true,
+    "missing_ground_truth_types": [],
+    "duplicate_revenue_event_groups": [
+      {
+        "revenue_event_key": "REV-EVENT-000001",
+        "order_ids": [
+          "ORD-2026-000001",
+          "ORD-2026-000091"
+        ]
+      }
+    ],
+    "post_conversion_fixtures": [
+      {
+        "touchpoint_id": "TOUCH-CON-000105-004000",
+        "found": true,
+        "after_conversion": true,
+        "evidence_reference_count": 0,
+        "excluded_correctly": true
+      }
+    ],
+    "currency_mismatch_cost_records": [
+      {
+        "cost_record_id": "COST-2026-000025",
+        "campaign_id": "CMP-2026-000001",
+        "cost_currency": "USD",
+        "campaign_currency": "INR",
+        "issue_type": "CURRENCY_MISMATCH"
+      }
+    ],
+    "currency_mismatch_fixture_checks": [
+      {
+        "cost_record_id": "COST-2026-000025",
+        "found": true,
+        "campaign_id": "CMP-2026-000001",
+        "cost_currency": "USD",
+        "campaign_budget_currency": "INR",
+        "reporting_currency": "INR",
+        "campaign_currency_mismatch": true,
+        "reporting_currency_mismatch": true,
+        "flagged": true,
+        "expected_decision": "CONVERT_OR_QUARANTINE",
+        "validated": true
+      }
+    ],
+    "campaigns_without_cost_records": [
+      "CMP-2026-000013"
+    ],
+    "missing_cost_fixtures": [
+      {
+        "campaign_id": "CMP-2026-000013",
+        "found": true,
+        "has_cost_records": false,
+        "missing_cost_confirmed": true
+      }
+    ],
+    "unsupported_identity_fixtures": [
+      {
+        "session_id": "SES-2026-000006",
+        "found": true,
+        "identity_evidence": "NONE",
+        "contact_link_present": true,
+        "flagged": true
+      }
+    ]
+  },
+  "chronological_coverage": {
+    "method": "timestamp-sorted 80/20 inventory split",
+    "cutoff_timestamp": "2026-11-01T00:00:00+00:00",
+    "earlier_period_orders": 72,
+    "later_period_orders": 19,
+    "limitation": "Descriptive only; no holdout model scoring or predictive accuracy is claimed."
+  },
+  "error_count": 0,
+  "warning_count": 0,
+  "errors": [],
+  "warnings": []
+}

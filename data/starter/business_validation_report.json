@@ -1,0 +1,44 @@
+{
+  "dataset": "yottaflex-attribution\\data\\starter",
+  "row_counts": {
+    "channel": 8,
+    "audience": 5,
+    "creative": 10,
+    "contact": 1000,
+    "campaign": 25,
+    "campaign_audience": 38,
+    "campaign_creative": 49,
+    "touchpoint": 4000,
+    "web_session": 350,
+    "lead": 220,
+    "opportunity": 200,
+    "orders": 91,
+    "cost_record": 25,
+    "attribution_result": 182,
+    "ground_truth": 5
+  },
+  "attribution_model_counts": {
+    "FIRST_TOUCH": 51,
+    "LAST_TOUCH": 51,
+    "LINEAR": 80
+  },
+  "ground_truth_issue_counts": {
+    "DUPLICATE_REVENUE": 1,
+    "POST_CONVERSION_TOUCH": 1,
+    "CURRENCY_MISMATCH": 1,
+    "MISSING_CAMPAIGN_COST": 1,
+    "UNSUPPORTED_IDENTITY_LINK": 1
+  },
+  "error_count": 0,
+  "warning_count": 0,
+  "errors": [],
+  "warnings": [],
+  "findings": [
+    "All five required ground-truth anomaly types are present.",
+    "Duplicate revenue event REV-EVENT-000001: orders ['ORD-2026-000001', 'ORD-2026-000091']; count once.",
+    "Currency mismatch flagged for COST-2026-000025: USD vs campaign INR; quarantine/convert before ROI.",
+    "Campaign CMP-2026-000013 has no cost records; ROI should be unavailable, not zero.",
+    "Session SES-2026-000006 has a contact link without identity evidence; quarantine/reject the link."
+  ],
+  "status": "PASS"
+}

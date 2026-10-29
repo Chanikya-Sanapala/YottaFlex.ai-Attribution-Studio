@@ -1,0 +1,32 @@
+{
+  "dataset": "yottaflex-attribution\\data\\starter",
+  "row_counts": {
+    "channel": 8,
+    "audience": 5,
+    "creative": 10,
+    "contact": 1000,
+    "campaign": 25,
+    "campaign_creative": 49,
+    "campaign_audience": 38,
+    "touchpoint": 4000,
+    "web_session": 350,
+    "lead": 220,
+    "opportunity": 200,
+    "orders": 91,
+    "cost_record": 25,
+    "attribution_result": 182,
+    "ground_truth": 5
+  },
+  "ground_truth_labels": {
+    "DUPLICATE_REVENUE": 1,
+    "POST_CONVERSION_TOUCH": 1,
+    "CURRENCY_MISMATCH": 1,
+    "MISSING_CAMPAIGN_COST": 1,
+    "UNSUPPORTED_IDENTITY_LINK": 1
+  },
+  "error_count": 0,
+  "warning_count": 0,
+  "errors": [],
+  "warnings": [],
+  "status": "PASS"
+}

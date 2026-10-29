@@ -1,0 +1,50 @@
+{
+  "seed": 20261022,
+  "scale": "starter",
+  "parameters": {
+    "campaigns": 25,
+    "contacts": 1000,
+    "touchpoints": 4000,
+    "opportunities": 200
+  },
+  "row_counts": {
+    "channel": 8,
+    "audience": 5,
+    "creative": 10,
+    "contact": 1000,
+    "campaign": 25,
+    "campaign_creative": 49,
+    "campaign_audience": 38,
+    "touchpoint": 4000,
+    "web_session": 350,
+    "lead": 220,
+    "opportunity": 200,
+    "orders": 91,
+    "cost_record": 25,
+    "attribution_result": 182,
+    "ground_truth": 5
+  },
+  "checksums_sha256": {
+    "attribution_result.csv": "dcea23e9cc6b1bfe09de7baf6dad3be5b989a3460f61988fda3812519e65f2b7",
+    "audience.csv": "02629b3ba50cb4d3fc3f3e976a3a53d93956be2d203744ba8abcf957416c96e4",
+    "campaign.csv": "107ea43a7f58ab8e24d88fcb52b2159b3696e22a12a1ce715c56b97a1a90523d",
+    "campaign_audience.csv": "b53309ce0e80224c3199e6303ee81b8fb5d8ca41e2688b41015cdc3c39e9312e",
+    "campaign_creative.csv": "d9493b3d7ec4fddc91ec523d4494318f6eef3d3694c55670220de3b7c52f9f46",
+    "channel.csv": "2ce8ca217c9941635eb4bbf1e94832a96cab53078e754d1b335ea000e54c7bd7",
+    "contact.csv": "777278bb8a48bcbf61ea8a116e9c93c0c11d9253bed0f0c65dca93b256d4b1f5",
+    "cost_record.csv": "622db5467cec8d216fef9853ff742b889303e02eace4ced4e7010c141b720ab3",
+    "creative.csv": "8a10dfd960e15c5dbff65295282870656cffb0d58390fd4151de2d1912a802ab",
+    "ground_truth.csv": "3b0755ac80faaaaaefd502a622b36f541ec1ec87b23884b9192d4a17c5ee0103",
+    "lead.csv": "12a64fbdb7700e081651d6cfa2bf02b01d9d1f096d172b361cd12c4ad277778c",
+    "opportunity.csv": "c2093250fc1069bc37f19d45402020b68998061c1ed2290f0399b17009624127",
+    "orders.csv": "d5d88f25fdfccad1dcca31bed6dbd5e75b2f976a6386b0c92c15556e52f4a286",
+    "touchpoint.csv": "3446baa5e5aa4dcc49f079c76aa0d5ce84a1beaba475444bbc700d0e9bc49d78",
+    "web_session.csv": "62d92d6e14b31a97a246cd950c5e18502be8200d6b83901eb867d3ff1a1e60a6"
+  },
+  "generated_at_fixed": "2026-10-22T00:00:00Z",
+  "notes": [
+    "All records are synthetic.",
+    "ground_truth.csv must remain separate from input features.",
+    "This generator deliberately injects labelled anomalies."
+  ]
+}

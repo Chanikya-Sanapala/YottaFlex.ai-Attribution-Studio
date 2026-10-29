@@ -1,0 +1,6 @@
+ground_truth_id,issue_type,entity_type,entity_id,expected_decision,details
+GT-00001,DUPLICATE_REVENUE,Order,ORD-2026-000091,COUNT_REVENUE_ONCE,"{""duplicate_of"": ""ORD-2026-000001"", ""revenue_event_key"": ""REV-EVENT-000001""}"
+GT-00002,POST_CONVERSION_TOUCH,Touchpoint,TOUCH-CON-000105-004000,EXCLUDE_FROM_ATTRIBUTION,"{""conversion_at"": ""2026-12-11T00:00:00Z"", ""conversion_order_id"": ""ORD-2026-000001"", ""touchpoint_at"": ""2026-12-14T00:00:00Z""}"
+GT-00003,CURRENCY_MISMATCH,CostRecord,COST-2026-000025,CONVERT_OR_QUARANTINE,"{""campaign_id"": ""CMP-2026-000001"", ""currency"": ""USD"", ""reporting_currency"": ""INR""}"
+GT-00004,MISSING_CAMPAIGN_COST,Campaign,CMP-2026-000013,ROI_UNAVAILABLE,"{""campaign_id"": ""CMP-2026-000013""}"
+GT-00005,UNSUPPORTED_IDENTITY_LINK,WebSession,SES-2026-000006,REJECT_OR_QUARANTINE_LINK,"{""contact_id"": ""CON-000760"", ""identity_evidence"": ""NONE""}"

@@ -1,0 +1,20 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: yottaflex-postgres
+    environment:
+      POSTGRES_DB: attribution
+      POSTGRES_USER: attribution
+      POSTGRES_PASSWORD: local_dev_only
+    ports:
+      - "5432:5432"
+    volumes:
+      - attribution_pgdata:/var/lib/postgresql/data
+      - ./database/schema.sql:/docker-entrypoint-initdb.d/001-schema.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U attribution -d attribution"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+volumes:
+  attribution_pgdata:

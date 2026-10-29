@@ -1,0 +1,9 @@
+channel_id,name,channel_type
+CH-EMAIL,Email,OWNED
+CH-PAID-SEARCH,Paid Search,PAID
+CH-SOCIAL,Social Media,PAID
+CH-ORGANIC,Organic Search,EARNED
+CH-DIRECT,Direct,OWNED
+CH-OFFLINE,Offline Sales,OFFLINE
+CH-REFERRAL,Referral,EARNED
+CH-DISPLAY,Display Ads,PAID
